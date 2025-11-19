@@ -19,9 +19,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # REQUIRED to fix shallow repo error
 
       - name: Lint Code Base
-        uses: super-linter/super-linter@v6
+        uses: github/super-linter@v6  # official recommended version
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: true
