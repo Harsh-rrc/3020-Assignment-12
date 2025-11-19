@@ -1,39 +1,27 @@
 name: Super-Linter
- 
+
 on:
-
   push:
-
     branches: [ "main" ]
-
   pull_request:
-
     branches: [ "main" ]
- 
+
+permissions:
+  contents: read
+  statuses: write
+  checks: write
+  pull-requests: write
+
 jobs:
-
-  super-lint:
-
-    name: Lint Code Base
-
+  lint:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Checkout code
-
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-        with:
-
-          fetch-depth: 0
- 
-      - name: Run Super-Linter
-
-        uses: super-linter/super-linter@v8.2.1
-
+      - name: Lint Code Base
+        uses: super-linter/super-linter@v6
         env:
-
           DEFAULT_BRANCH: main
-
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
