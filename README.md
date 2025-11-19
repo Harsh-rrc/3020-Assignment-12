@@ -1,13 +1,12 @@
-# My Cloud Project
+# Assignment 12
 
-This is a sample project for COMP-3020 to demonstrate CI/CD with GitHub Actions.
+COMP-3020 Cloud Infrastructure and Development
 
-## Features
+## Team
 
-- Created by Harsh and Khush
-- Uses GitHub Super-Linter
-- Implements peer review via Pull Requests
+- Harsh
+- Khush
 
-## Description
+## Purpose
 
-This repository contains the code for Assignment 12, focusing on Continuous Integration and Continuous Deployment workflows.
+CI/CD demonstration with GitHub Actions.
