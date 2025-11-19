@@ -2,11 +2,6 @@
 
 COMP-3020 Cloud Infrastructure and Development
 
-## Team
+Team: Harsh and Khush
 
-- Harsh
-- Khush
-
-## Purpose
-
-CI/CD demonstration with GitHub Actions.
+Purpose: CI/CD demo.
